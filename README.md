@@ -1,41 +1,3 @@
-<style>
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes slideInRight {
-  from { opacity: 0; transform: translateX(20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
-}
-
-@keyframes glow {
-  0%, 100% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); }
-  50% { box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); }
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.fade-in { animation: fadeIn 0.8s ease-in-out; }
-.slide-left { animation: slideInLeft 0.8s ease-out; }
-.slide-right { animation: slideInRight 0.8s ease-out; }
-.pulse { animation: pulse 2s ease-in-out infinite; }
-.glow-box { animation: glow 2s ease-in-out infinite; }
-.spin { animation: spin 10s linear infinite; }
-</style>
 ```
 ███████╗██╗  ██╗ ██████╗ ██╗   ██╗███╗   ██╗ █████╗ ██╗  ██╗
 ██╔════╝██║  ██║██╔═══██╗██║   ██║████╗  ██║██╔══██╗██║ ██╔╝
@@ -140,16 +102,49 @@
 
 ---
 
-## 📊 GitHub Stats & Streaks
+## 🚀 My Contribution Journey
 
-<div align="center" class="slide-left">
+<div align="center">
 
-<div class="glow-box">![GitHub Stats](https://github-readme-stats.vercel.app/api?username=shounakjoshi88-</div>a11y&theme=radical&show_icons=true&include_all_commits=true&count_private=true)
-<div class="glow-box">![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shounakjoshi88-</div>a11y&theme=radical&layout=compact)
-<div class="glow-box">![GitHub Streak](https://github-readme-streak-stats.vercel.app/?user=shounakjoshi88-a11y&theme=radical)</div>
-</div>
+### 📈 Contribution Timeline
+
+| 2024 | 2025 |
+|------|------|
+| **Joined GitHub** 🎯 | **Building Momentum** 💪 |
+| Started C Programming | Exploring Web Dev |
+| Learning Data Structures | AI/ML Experiments |
+| ~50 Commits | **100+ Contributions** ✨ |
+
+### 🎖️ Skills & Focus Areas
+
+🔵 **Programming**: C • Python • JavaScript • Shell Scripting
+🟢 **Web**: HTML5 • CSS3 • Bootstrap
+🟡 **AI/ML**: LLM Deployment • Local Model Testing • Ollama
+🔴 **Tools**: VS Code • Git • Linux • Kali Linux
+
+### 💻 Current Focus
+
+```
+┌─────────────────────────────────────┐
+│ ⚡ Building Full-Stack Projects     │
+│ 🤖 Fine-tuning Local LLM Models     │
+│ 📚 Competitive Programming          │
+│ 🌐 Web Development & Design         │
+└─────────────────────────────────────┘
+```
 
 ---
+
+### 🎯 Achievements & Milestones
+
+- 🎓 **1st Year CSE** at Ramdeobaba University
+- 📚 **Created 3+ Repositories** on GitHub with 100+ total commits
+- 🤖 **Tested 20+ LLM Models** (Hermes, Dolphin, Wizard, Gemma, Qwen, DeepSeek R1, Claude, Llama, Mistral & more)
+- 💻 **70+ C Practice Programs** & Data Structure implementations
+- 🌐 **Full-Stack Web Projects** using HTML5, CSS3, Bootstrap, JavaScript
+- ⚡ **Local LLM Deployment** & optimization with Ollama
+- 🏆 **Competitive Programming** Enthusiast - Algorithm optimization & problem-solving
+</div>
 
 ## 🎯 Key Projects
 
