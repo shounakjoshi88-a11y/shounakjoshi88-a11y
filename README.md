@@ -21,7 +21,9 @@
 
 ## 💫 About Me
 
-<img align="right" src="https://media.giphy.com/media/SWoSkN6DxTszqKSJFH/giphy.gif" alt="Coding" width="200"/>
+> 📝 *Building amazing things with code & creativity!*
+
+<!-- GIF Animation would go here - Currently optimizing for better display -->
 
 ```diff
 + 👨‍💻 I'm currently working on:
@@ -105,11 +107,8 @@
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=shounakjoshi88-a11y&theme=radical&show_icons=true&include_all_commits=true&count_private=true)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shounakjoshi88-a11y&theme=radical&layout=compact)
-
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=shounakjoshi88-a11y&theme=radical)
-
 </div>
 
 ---
