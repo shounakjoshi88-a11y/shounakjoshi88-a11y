@@ -101,12 +101,12 @@
 
 ### 📈 Contribution Timeline
 
-| 2024 | 2025 |
+| 2025 | 2026 |
 |------|------|
-| **Joined GitHub** 🎯 | **Building Momentum** 💪 |
+| **Joined GitHub** 😍 | |
 | Started C Programming | Exploring Web Dev |
 | Learning Data Structures | AI/ML Experiments |
-| ~50 Commits | **100+ Contributions** ✨ |
+| **255+ Commits** | **Expanding & Growing** 🚀 |
 
 ### 🎖️ Skills & Focus Areas
 
