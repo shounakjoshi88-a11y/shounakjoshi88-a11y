@@ -103,9 +103,9 @@
 
 | 2025 | 2026 |
 |------|------|
-| **Joined GitHub** 😍 | |
-| Started C Programming | Exploring Web Dev |
-| Learning Data Structures | AI/ML Experiments |
+| **Joined GitHub** 😍 | **Enjoying Github** |
+| Started C Programming | Learning Data Structures |
+| Exploring Web Dev | AI/ML Experiments |
 | **255+ Commits** | **Expanding & Growing** 🚀 |
 
 ### 🎖️ Skills & Focus Areas
