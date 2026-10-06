@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="de-ai">
+  <style>
+    svg { --d: #b4533a; }
+    g { stroke: var(--d); }
+    @media (prefers-color-scheme: dark) {
+      svg { --d: #e8946f; }
+    }
+  </style>
+  <g fill="none" stroke="var(--d)" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2.8h8.5L19 7.3v14H6Z"/>
+    <path d="M14.2 2.8v4.7H19"/>
+    <path d="M9 11.2h7" stroke-width="1.5"/>
+    <circle cx="12" cy="15.4" r="1.6" fill="var(--d)" stroke="none"/>
+    <path d="M9 19.2h7" stroke-width="1.5"/>
+  </g>
+</svg>

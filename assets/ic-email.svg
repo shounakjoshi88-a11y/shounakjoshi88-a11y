@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="email">
+  <style>
+    svg { --d: #1a1815; }
+    g { stroke: var(--d); }
+    @media (prefers-color-scheme: dark) {
+      svg { --d: #f0ece4; }
+    }
+  </style>
+  <g fill="none" stroke="var(--d)" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.8" y="5.2" width="18.4" height="13.6" rx="2.4"/>
+    <path d="M3.4 7.2 12 13.2 20.6 7.2"/>
+  </g>
+</svg>

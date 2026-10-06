@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="youtube">
+  <style>
+    svg { --d: #1a1815; }
+    g { stroke: var(--d); }
+    @media (prefers-color-scheme: dark) {
+      svg { --d: #f0ece4; }
+    }
+  </style>
+  <g fill="none" stroke="var(--d)" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.5" y="5.5" width="19" height="13" rx="4.2"/>
+    <path d="M10.4 9.2 15.6 12 10.4 14.8Z" fill="var(--d)" stroke-width="1.2"/>
+  </g>
+</svg>
