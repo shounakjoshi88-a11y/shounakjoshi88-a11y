@@ -27,15 +27,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # svg-only is the same generator as Platane/snk@v3 but skips GIF encoding,
-      # which turns a multi-minute step into a few seconds.
+      # Platane/snk emits SVG (rather than a ~6 MB GIF) simply by giving the
+      # output a .svg extension. Colours are pinned to the README's coral
+      # accent so the grid matches the cards instead of fighting them.
+      # github_token defaults to the job token; no secret is needed.
       - name: Generate contribution snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            assets/activity-light.svg
-            assets/activity-dark.svg?palette=github-dark
+            assets/activity-light.svg?palette=github-light&color_snake=%23b4533a&color_dots=%23e4e1d9,%23d9b3a5,%23c98d78,%23b4533a,%23b4533a
+            assets/activity-dark.svg?palette=github-dark&color_snake=%23e8946f&color_dots=%232e2924,%234a3a30,%23694a36,%2395604a,%23e8946f
 
       - name: Commit if changed
         run: |
