@@ -1,186 +1,128 @@
-<div align="center" class="fade-in">
+<img src="assets/masthead.svg" width="600" alt="Shounak Joshi — second-year CSE student building agentic AI systems, real-time web apps and engines from scratch">
 
-<img src="https://svg-banners.vercel.app/api?type=glitch&text1=SHOUNAK&text2=%F0%9F%8C%88%20Build.%20Design.%20Ship.&width=1000&height=220" />
+Second-year **B.Tech CSE (AI &amp; ML)** at Ramdeobaba University, Nagpur.
+I build agentic AI systems, real-time web apps, and engines written from
+scratch — mostly TypeScript and Python, with C# when the real problem is a
+renderer.
 
-# 🚀 Welcome to My Digital Universe! 🌌
+The thread through most of it: I care far less about whether a demo works on
+my own laptop than about whether it still holds up when someone else runs it.
 
-### *A passionate developer exploring AI, Web, and Code*
+<p>
+  <a href="https://x.com/BroIndian39416"><img src="https://img.shields.io/badge/X-000000?logo=x&logoColor=white&style=flat-square" alt="Shounak Joshi on X" width="90"></a>
+  <a href="https://youtube.com/@A3-21-ShounakSamirkumarJoshi"><img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white&style=flat-square" alt="Shounak Joshi on YouTube" width="104"></a>
+  <a href="mailto:shounakjoshi88@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=flat-square" alt="Email Shounak Joshi at shounakjoshi88@gmail.com" width="104"></a>
+  <a href="https://github.com/shounakjoshi88-a11y?tab=repositories"><img src="https://img.shields.io/badge/All_repositories-181717?logo=github&logoColor=white&style=flat-square" alt="Browse all repositories by Shounak Joshi" width="150"></a>
+</p>
 
-![Profile Views](https://komarev.com/ghpvc/?username=shounakjoshi88-a11y)
+## Selected work
 
-</div>
+<a href="https://github.com/shounakjoshi88-a11y/Flux">
+  <img src="assets/card-flux.svg" width="600" alt="Flux — agentic AI research companion built on Bun, Express 5, React 19 and PostgreSQL with pgvector">
+</a>
 
----
+- **[Flux](https://github.com/shounakjoshi88-a11y/Flux)** — a multi-model research
+  companion built around a real agentic loop: plan the work, execute it under
+  tool permissions, verify the result against criteria, retry what failed.
+  Twenty-one registered tools, 1024-dimensional vector memory in pgvector,
+  Python running in isolated Firecracker microVMs, a 3D knowledge graph, and
+  a WebSocket agent protocol with team orchestration.
+  <sub>[live](https://flux-weld-rho.vercel.app)</sub>
 
-## 💫 About Me
+<a href="https://github.com/shounakjoshi88-a11y/stellar-forge">
+  <img src="assets/card-stellar-forge.svg" width="600" alt="Stellar Forge — event platform with a scroll-driven 3D ticket-cut animation, built with React 19, Three.js and WebSocket">
+</a>
 
-> 📝 *Building amazing things with code & creativity!*
+- **[Stellar Forge](https://github.com/shounakjoshi88-a11y/stellar-forge)** — event
+  management where the ticket gets cut by a falling pair of scissors driven by
+  scroll position: the blades track the perforation, the thread runs out
+  mid-cut, and what is left swings free. Seats are claimed in serialisable
+  transactions, so two people cannot both take the last one.
+  <sub>[live](https://stellar-forge-frontend.vercel.app/)</sub>
 
-<!-- GIF Animation would go here - Currently optimizing for better display -->
+<a href="https://github.com/shounakjoshi88-a11y/de-ai">
+  <img src="assets/card-de-ai.svg" width="600" alt="de-ai — a deterministic text rewriter that calls no language model, built with Python and FastAPI">
+</a>
 
-```diff
-+ 👨‍💻 I'm currently working on:
-  ├─ 🔴 C-practice repo
-  ├─ 🟠 HTML/CSS projects
-  └─ 🟡 LLM-related content
+- **[de-ai](https://github.com/shounakjoshi88-a11y/de-ai)** — a text rewriter that
+  deliberately calls no model at all. Same input, same output, every run. A
+  blocklist of 600+ technical terms that the lexical pass may never touch
+  exists because `server → waiter` and `self-attention → elf-attention` are
+  exactly the class of bug a naive synonym swap creates. 156 assertions pin
+  the behaviour so a fix cannot silently regress.
 
-+ 👯 I'm looking to collaborate on:
-  ├─ 🌐 Web development
-  └─ 🤖 AI/ML projects
+<a href="https://github.com/shounakjoshi88-a11y/meridian">
+  <img src="assets/card-meridian.svg" width="600" alt="Meridian — clinical records and triage tool built with Python, Flask and pandas on real ICD-10-CM and HPO registries">
+</a>
 
-+ 💛 I'm looking for help with:
-  ├─ 🧠 Advanced LLM fine-tuning
-  └─ ⚛️ Quantum computing
+- **[Meridian](https://github.com/shounakjoshi88-a11y/meridian)** — clinical records and
+  symptom triage under a hard constraint: only concepts from six lab
+  practicals. No ORM because none was taught, no frontend framework for the
+  same reason. Runs on the real 98,403-code ICD-10-CM registry and 11,655 HPO
+  rare conditions, and refuses to write any condition whose code is not
+  already in that registry.
 
-+ 🌱 I'm currently learning:
-  ├─ 🏗️ Full-stack web development
-  └─ 📊 Machine learning model optimization
+## Also worth a look
 
-+ 💬 Ask me about:
-  ├─ 🦙 Local LLM model deployment
-  ├─ 💻 Web development
-  └─ 📝 C programming
+- **[Raksha](https://github.com/shounakjoshi88-a11y/raksha-crowd-safety-hackathon)**
+  — team lead for a Hackathon 2026 entry on safety at large public events.
+  The argument: crushing pressure passes body to body before a guard notices
+  anyone has stopped moving, so density and flow have to be measured rather
+  than watched.
+- **[60-login-page-challenge](https://github.com/shounakjoshi88-a11y/60-login-page-challenge)**
+  — sixty distinct login screens in plain HTML and CSS, one style per week.
+- **[c-practice](https://github.com/shounakjoshi88-a11y/c-practice)** — where the C and
+  the data structures came from.
 
-+ ⚡ Fun fact:
-  I code best at 2 AM while running LLMs locally on my HP Victus 🔥
-```
+## Currently
 
----
+*October 2026*
 
-## 🌐 Socials & Connect
+- **Voxelcraft** — a Minecraft-faithful voxel sandbox in Godot 4.7 and C#.
+  Greedy meshing with smooth lighting and baked ambient occlusion,
+  two-channel voxel light propagation, multithreaded chunk streaming, and
+  every asset procedurally generated from scratch. Private until it is worth
+  opening.
+- Finishing the Raksha submission for Hackathon 2026.
+- Trying to write more C and less JavaScript.
 
-<div align="center">
+## Stack
 
-[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white&style=for-the-badge)](https://x.com/@BroIndian39416)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white&style=for-the-badge)](https://youtube.com/@A3-21-ShounakSamirkumarJoshi)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:shounakjoshi88@gmail.com)
+Shipped work, not aspiration — the repositories are the evidence.
 
-</div>
+**Languages** — TypeScript, Python, JavaScript, C#, C
 
----
+<img src="https://skillicons.dev/icons?i=ts,py,js,cs,c" alt="TypeScript, Python, JavaScript, C# and C" width="250">
 
-## 💻 Tech Stack & Arsenal
+**Runtime and data** — Bun, Express, PostgreSQL with pgvector, Prisma, React,
+Tailwind, Three.js, GSAP
 
-<div align="center">
+<img src="https://skillicons.dev/icons?i=bun,express,postgres,prisma,react,tailwind,threejs,gsap" alt="Bun, Express, PostgreSQL, Prisma, React, Tailwind CSS, Three.js and GSAP" width="450">
 
-### 🔴 Core Languages
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+**Platform and tooling** — Supabase, Godot, Git, Linux, Docker
 
-### 🟠 Web Development
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+<img src="https://skillicons.dev/icons?i=supabase,godot,git,linux,docker" alt="Supabase, Godot, Git, Linux and Docker" width="280">
 
-### 🟡 Tools & Platforms
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+## Activity
 
-### 🟢 ML & Data
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)
-![Jupyter](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+<details>
+<summary>Contribution history</summary>
 
-### 🟣 Design & Media
-![Adobe Creative Cloud](https://img.shields.io/badge/Adobe%20Creative%20Cloud-DA1F26.svg?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=white)
-![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white)
-![Adobe Audition](https://img.shields.io/badge/Adobe%20Audition-9999FF.svg?style=for-the-badge&logo=Adobe%20Audition&logoColor=white)
-![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
+  <img src="assets/activity-light.svg" width="600" alt="Contribution activity over the last 53 weeks">
+</picture>
 
-</div>
+Regenerated daily by <code>.github/workflows/activity.yml</code> and committed
+straight into this repository, so it renders without any third-party image
+service being up.
 
----
-
-## 🚀 My Contribution Journey
-
-<div align="center">
-
-### 📈 Contribution Timeline
-
-| 2025 | 2026 |
-|------|------|
-| **Joined GitHub** 😍 | **Enjoying Github** |
-| Started C Programming | Learning Data Structures |
-| Exploring Web Dev | AI/ML Experiments |
-| **255+ Commits** | **Expanding & Growing** 🚀 |
-
-### 🎖️ Skills & Focus Areas
-
-🔵 **Programming**: C • Python • JavaScript • Shell Scripting
-🟢 **Web**: HTML5 • CSS3 • Bootstrap
-🟡 **AI/ML**: LLM Deployment • Local Model Testing • Ollama
-🔴 **Tools**: VS Code • Git • Linux • Kali Linux
-
-### 💻 Current Focus
-
-```
-┌─────────────────────────────────────┐
-│ ⚡ Building Full-Stack Projects     │
-│ 🤖 Fine-tuning Local LLM Models     │
-│ 📚 Competitive Programming          │
-│ 🌐 Web Development & Design         │
-└─────────────────────────────────────┘
-```
+</details>
 
 ---
 
-### 🎯 Achievements & Milestones
-
-- 🎓 **1st Year CSE** at Ramdeobaba University
-- 📚 **Created 3+ Repositories** on GitHub with 100+ total commits
-- 🤖 **Tested 20+ LLM Models** (Hermes, Dolphin, Wizard, Gemma, Qwen, DeepSeek R1, Claude, Llama, Mistral & more)
-- 💻 **70+ C Practice Programs** & Data Structure implementations
-- 🌐 **Full-Stack Web Projects** using HTML5, CSS3, Bootstrap, JavaScript
-- ⚡ **Local LLM Deployment** & optimization with Ollama
-- 🏆 **Competitive Programming** Enthusiast - Algorithm optimization & problem-solving
-</div>
-
-## 🎯 Key Projects
-
-<div align="center">
-
-| Project | Tech | Status |
-|---------|------|--------|
-| 🔴 **C-Practice** | C, Algorithms | 🟢 Active |
-| 🟠 **HTML/CSS Projects** | HTML, CSS, JS | 🟢 Active |
-| 🟡 **Web Dev Portfolio** | Full-Stack | 🟡 Coming Soon |
-| 🟣 **AI/ML Experiments** | Python, TensorFlow | 🟡 In Progress |
-
-</div>
-
----
-
-## 🚀 Quick Links
-
-<div align="center">
-
-- 📚 **Repositories**: [View on GitHub](https://github.com/shounakjoshi88-a11y?tab=repositories)
-- 🎓 **Learning Path**: DSA → Web Dev → ML/AI
-- 💬 **Always up for**: Collaborations, Code Reviews, Tech Discussions
-- 📧 **Reach me**: shounakjoshi88@gmail.com
-
-</div>
-
----
-
-## ✨ Fun Facts
-
-- 🌙 **Nocturnal Coder**: Best productivity at 2 AM with local LLMs running
-- 🎮 **Gaming Rig**: HP Victus with 6GB VRAM for ML experiments
-- 📖 **Learning Style**: Hands-on > Theoretical (experiment first!)
-- 🧠 **LLM Explorer**: Tested Hermes, Dolphin, Wizard, Gemma, Qwen...
-- 🎬 **Content Creator**: Building tutorials and tech content
-
----
-
-<div align="center">
-
-### 🌟 *"Code is Poetry, Debugging is Therapy"* 🌟
-
-### Show some ❤️ by Starring My Repositories!
-
-</div>
+<sub>Every graphic here is a static SVG in <code>assets/</code> — no external
+badge or stats service, so nothing on this page can break or rot. Both colour
+themes are designed, not inverted, and the motion respects
+<code>prefers-reduced-motion</code>.</sub>

@@ -1,0 +1,50 @@
+name: activity
+
+# Regenerates the contribution grid that the README embeds.
+#
+# Why this exists instead of an <img> pointing at a badge service:
+# public instances of github-readme-stats, -trophy and -activity-graph have all
+# hit 402/503 deployment pauses. A committed file served from this repository
+# has no third party in the path, so it cannot break or go stale.
+
+on:
+  schedule:
+    # 04:17 UTC daily. Off the hour on purpose — every scheduled GitHub Action
+    # fires at :00, and the queue there is the worst of the day.
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # svg-only is the same generator as Platane/snk@v3 but skips GIF encoding,
+      # which turns a multi-minute step into a few seconds.
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/activity-light.svg
+            assets/activity-dark.svg?palette=github-dark
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity-light.svg assets/activity-dark.svg
+          if git diff --staged --quiet; then
+            echo "No change in contribution grid."
+            exit 0
+          fi
+          git commit -m "chore: refresh contribution grid"
+          git push

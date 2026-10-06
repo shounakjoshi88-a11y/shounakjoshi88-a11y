@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="100" viewBox="0 0 600 100" role="img" aria-label="Stellar Forge">
+  <style>
+  .c-bg   { fill: #faf9f5; }
+  .c-ink  { fill: #1a1815; }
+  .c-mut  { fill: #6c6a64; }
+  .c-acc  { fill: #b4533a; }
+  .c-hair { fill: #e4e1d9; }
+  .c-line { stroke: #e4e1d9; stroke-width: 1; }
+  @media (prefers-color-scheme: dark) {
+    .c-bg   { fill: #14120f; }
+    .c-ink  { fill: #f0ece4; }
+    .c-mut  { fill: #a19b8f; }
+    .c-acc  { fill: #e8946f; }
+    .c-hair { fill: #2e2924; }
+    .c-line { stroke: #2e2924; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .c-bar { animation: none; opacity: .8; }
+  }
+  @keyframes breathe { 0%, 100% { opacity: .5 } 50% { opacity: 1 } }
+  .c-bar { animation: breathe 4s ease-in-out infinite; }</style>
+  <rect class="c-bg c-line" x="0.5" y="0.5" width="599" height="99" rx="10"/>
+  <rect class="c-acc c-bar" x="0" y="16" width="3" height="68" rx="1.5"/>
+  <text class="c-ink" x="24" y="40" font-family="ui-serif, Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="23" font-weight="600">Stellar Forge</text>
+  <text class="c-mut" x="24" y="63" font-family="ui-serif, Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="15.5" font-style="italic">Event platform with a scroll-driven 3D ticket cut</text>
+  <text class="c-mut" x="24" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="0.1">React 19 · Three.js · GSAP ScrollTrigger · Prisma · WebSocket + SSE</text>
+</svg>
