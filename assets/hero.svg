@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="216" viewBox="0 0 680 216" role="img" aria-label="Shounak Joshi">
+  <style>
+  .ink   { fill: #1a1815; }
+  .mut   { fill: #6c6a64; }
+  .fnt   { fill: #a8a49c; }
+  .acc   { fill: #b4533a; }
+  .accs  { stroke: #b4533a; }
+  .hair  { stroke: #e3e0d8; }
+  .sheenstop { stop-color: #b4533a; }
+  .pulse { fill: #b4533a; }
+  @media (prefers-color-scheme: dark) {
+    .ink   { fill: #f0ece4; }
+    .mut   { fill: #a19b8f; }
+    .fnt   { fill: #6b655c; }
+    .acc   { fill: #e8946f; }
+    .accs  { stroke: #e8946f; }
+    .hair  { stroke: #2b2723; }
+    .sheenstop { stop-color: #e8946f; }
+    .pulse { fill: #e8946f; }
+  }
+  @keyframes settle {
+    from { opacity: 0; transform: translateY(9px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  /* One glint, then stillness. A continuous loop reads as a light show; a
+     3s pass every 13s reads as a considered detail. */
+  @keyframes sheen {
+    0%   { transform: translateX(0); }
+    21%  { transform: translateX(1180px); }
+    100% { transform: translateX(1180px); }
+  }
+  @keyframes breathe { 0%, 100% { opacity: .3; } 50% { opacity: .9; } }
+
+  /* An SVG loaded through an image tag exposes no pointer events, so there is
+     deliberately no hover rule anywhere in this file. Angle brackets are kept
+     out of these comments: XML would parse them as markup. */
+
+  @supports (animation-name: settle) {
+    
+    .s0 { animation: settle .85s cubic-bezier(.16,1,.3,1) both; }
+    .s1 { animation: settle .85s cubic-bezier(.16,1,.3,1) .09s both; }
+    .s2 { animation: settle .85s cubic-bezier(.16,1,.3,1) .17s both; }
+    .s3 { animation: settle .85s cubic-bezier(.16,1,.3,1) .25s both; }
+    .s4 { animation: settle .85s cubic-bezier(.16,1,.3,1) .33s both; }
+    
+    .rule { stroke-width: 1; stroke-dasharray: 632; stroke-dashoffset: 632;
+            animation: draw 1.5s cubic-bezier(.16,1,.3,1) .30s forwards; }
+    
+    .sheen { animation: sheen 13s cubic-bezier(.42,0,.22,1) infinite; }
+    
+    .pulse { animation: breathe 7s ease-in-out infinite; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .s0, .s1, .s2, .s3, .s4, .s5 { animation: none; opacity: 1; transform: none; }
+    .d0, .d1, .d2, .d3, .d4 { animation: none; stroke-dashoffset: 0; }
+    .sheen { animation: none; opacity: 0; }
+    .pulse { animation: none; opacity: .65; }
+  }
+</style>
+  <defs>
+    <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b4533a" stop-opacity="0"/>
+      <stop offset=".5" class="sheenstop" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#b4533a" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="nm" maskUnits="userSpaceOnUse" x="0" y="18" width="680" height="80">
+      <text x="0" y="76" font-family="ui-serif, Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-size="56" font-weight="600" letter-spacing="-0.6" fill="#ffffff">Shounak Joshi</text>
+    </mask>
+  </defs>
+
+  <text class="mut s0" x="0" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" letter-spacing="2.6">BTECH CSE  ·  AI &amp; ML  ·  RCOEM</text>
+
+  <text class="ink s1" x="0" y="76" font-family="ui-serif, Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-size="56" font-weight="600" letter-spacing="-0.6">Shounak Joshi</text>
+
+  <!-- the name is drawn once in ink; a light passes over it -->
+  <g mask="url(#nm)">
+    <rect class="sheen"  x="-260" y="18" width="300" height="72" fill="url(#sh)"/>
+  </g>
+
+  <line class="hair rule" x1="0" y1="112" x2="632" y2="112"/>
+  <circle class="pulse" cx="639" cy="112" r="2.6"/>
+
+  <text class="ink s3" x="0" y="152" font-family="ui-serif, Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-size="18">Agentic AI systems, real-time web apps, engines written from scratch.</text>
+
+  <text class="mut s4" x="0" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5">Second year  ·  Ramdeobaba University, Nagpur</text>
+</svg>

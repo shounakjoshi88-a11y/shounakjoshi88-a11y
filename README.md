@@ -1,76 +1,59 @@
-<img src="assets/masthead.svg" width="600" alt="Shounak Joshi — second-year CSE student building agentic AI systems, real-time web apps and engines from scratch">
+<img src="assets/hero.svg" width="680" alt="Shounak Joshi, BTech CSE with AI and ML at RCOEM, second year. Agentic AI systems, real-time web apps, engines written from scratch.">
 
-Second-year **B.Tech CSE (AI &amp; ML)** at Ramdeobaba University, Nagpur.
-I build agentic AI systems, real-time web apps, and engines written from
-scratch — mostly TypeScript and Python, with C# when the real problem is a
-renderer.
+Most of what I build ends up needing the unglamorous half of the job: making it
+correct when two people reach the last seat at the same moment, when the font
+is missing, when the thing finally runs on someone else's machine rather than
+mine. That is the part I optimise for.
 
-The thread through most of it: I care far less about whether a demo works on
-my own laptop than about whether it still holds up when someone else runs it.
+Everything below is shipped work, not a roadmap.
 
 <p>
-  <a href="https://x.com/BroIndian39416"><img src="https://img.shields.io/badge/X-000000?logo=x&logoColor=white&style=flat-square" alt="Shounak Joshi on X" width="90"></a>
-  <a href="https://youtube.com/@A3-21-ShounakSamirkumarJoshi"><img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white&style=flat-square" alt="Shounak Joshi on YouTube" width="104"></a>
-  <a href="mailto:shounakjoshi88@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=flat-square" alt="Email Shounak Joshi at shounakjoshi88@gmail.com" width="104"></a>
-  <a href="https://github.com/shounakjoshi88-a11y?tab=repositories"><img src="https://img.shields.io/badge/All_repositories-181717?logo=github&logoColor=white&style=flat-square" alt="Browse all repositories by Shounak Joshi" width="150"></a>
+  <a href="https://github.com/shounakjoshi88-a11y/Flux"><strong>Flux</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/shounakjoshi88-a11y/stellar-forge"><strong>Stellar Forge</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/shounakjoshi88-a11y/de-ai"><strong>de-ai</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/shounakjoshi88-a11y/meridian"><strong>Meridian</strong></a> &nbsp;·&nbsp;
+  <a href="https://x.com/BroIndian39416"><strong>X</strong></a> &nbsp;·&nbsp;
+  <a href="https://youtube.com/@A3-21-ShounakSamirkumarJoshi"><strong>YouTube</strong></a> &nbsp;·&nbsp;
+  <a href="mailto:shounakjoshi88@gmail.com"><strong>Email</strong></a>
 </p>
 
-## Selected work
-
-<a href="https://github.com/shounakjoshi88-a11y/Flux">
-  <img src="assets/card-flux.svg" width="600" alt="Flux — agentic AI research companion built on Bun, Express 5, React 19 and PostgreSQL with pgvector">
+<a href="https://github.com/shounakjoshi88-a11y?tab=repositories">
+  <img src="assets/index.svg" width="680" alt="Index of selected work. 01 Flux, an agentic AI companion that plans, executes under tool permissions, verifies and retries. 02 Stellar Forge, an event platform whose ticket is cut by a scroll-driven pair of 3D scissors. 03 de-ai, a text rewriter that calls no model at all, with 156 assertions pinning the behaviour. 04 Meridian, clinical triage built only from six lab practicals on real ICD-10-CM data.">
 </a>
 
-- **[Flux](https://github.com/shounakjoshi88-a11y/Flux)** — a multi-model research
-  companion built around a real agentic loop: plan the work, execute it under
-  tool permissions, verify the result against criteria, retry what failed.
-  Twenty-one registered tools, 1024-dimensional vector memory in pgvector,
-  Python running in isolated Firecracker microVMs, a 3D knowledge graph, and
-  a WebSocket agent protocol with team orchestration.
-  <sub>[live](https://flux-weld-rho.vercel.app)</sub>
+## What the hard part was
 
-<a href="https://github.com/shounakjoshi88-a11y/stellar-forge">
-  <img src="assets/card-stellar-forge.svg" width="600" alt="Stellar Forge — event platform with a scroll-driven 3D ticket-cut animation, built with React 19, Three.js and WebSocket">
-</a>
+**Flux** ran a plan, execute, verify, retry loop over 21 tools. Streaming meant
+tool results and prose arrive interleaved, so the verifier had to judge results
+it had not finished receiving. Memories are ranked and deduplicated by cosine
+distance, and the ranking re-injects into later tool calls, which means a bad
+extraction quietly poisons every answer after it.
 
-- **[Stellar Forge](https://github.com/shounakjoshi88-a11y/stellar-forge)** — event
-  management where the ticket gets cut by a falling pair of scissors driven by
-  scroll position: the blades track the perforation, the thread runs out
-  mid-cut, and what is left swings free. Seats are claimed in serialisable
-  transactions, so two people cannot both take the last one.
-  <sub>[live](https://stellar-forge-frontend.vercel.app/)</sub>
+**Stellar Forge** looks like a CRUD app with a 3D header. The 3D header is the
+easy part. The hard part is that seat claims have to be race-safe across
+concurrent users, so registration runs in serialisable transactions with row
+locking, and the live counter is a single source of truth rather than whatever
+each client last fetched.
 
-<a href="https://github.com/shounakjoshi88-a11y/de-ai">
-  <img src="assets/card-de-ai.svg" width="600" alt="de-ai — a deterministic text rewriter that calls no language model, built with Python and FastAPI">
-</a>
+**de-ai** was built to avoid the failure everyone else has. An LLM paraphraser is
+non-deterministic, costs money per call, and quietly changes meaning. A rule bank
+is none of those things, but it will happily turn `server` into `waiter`, so the
+lexical pass is fenced off from a 600-term technical blocklist and the whole
+pipeline re-scans its own output and reverts anything that introduced a new tell.
 
-- **[de-ai](https://github.com/shounakjoshi88-a11y/de-ai)** — a text rewriter that
-  deliberately calls no model at all. Same input, same output, every run. A
-  blocklist of 600+ technical terms that the lexical pass may never touch
-  exists because `server → waiter` and `self-attention → elf-attention` are
-  exactly the class of bug a naive synonym swap creates. 156 assertions pin
-  the behaviour so a fix cannot silently regress.
+**Meridian** had a hard constraint: only concepts from six lab practicals. No ORM
+because none was taught, no framework for the same reason. The interesting part is
+what that forced, and the part I would not have guessed, which is that every
+generator bug became a named regression test.
 
-<a href="https://github.com/shounakjoshi88-a11y/meridian">
-  <img src="assets/card-meridian.svg" width="600" alt="Meridian — clinical records and triage tool built with Python, Flask and pandas on real ICD-10-CM and HPO registries">
-</a>
-
-- **[Meridian](https://github.com/shounakjoshi88-a11y/meridian)** — clinical records and
-  symptom triage under a hard constraint: only concepts from six lab
-  practicals. No ORM because none was taught, no frontend framework for the
-  same reason. Runs on the real 98,403-code ICD-10-CM registry and 11,655 HPO
-  rare conditions, and refuses to write any condition whose code is not
-  already in that registry.
-
-## Also worth a look
+## Elsewhere
 
 - **[Raksha](https://github.com/shounakjoshi88-a11y/raksha-crowd-safety-hackathon)**
-  — team lead for a Hackathon 2026 entry on safety at large public events.
-  The argument: crushing pressure passes body to body before a guard notices
-  anyone has stopped moving, so density and flow have to be measured rather
-  than watched.
+  — team lead, Hackathon 2026, safety at large public events. The premise is that
+  crushing pressure passes body to body before a guard notices anyone has stopped
+  moving, so density and flow get measured rather than watched.
 - **[60-login-page-challenge](https://github.com/shounakjoshi88-a11y/60-login-page-challenge)**
-  — sixty distinct login screens in plain HTML and CSS, one style per week.
+  — sixty login screens in plain HTML and CSS, one style per week.
 - **[c-practice](https://github.com/shounakjoshi88-a11y/c-practice)** — where the C and
   the data structures came from.
 
@@ -78,30 +61,18 @@ my own laptop than about whether it still holds up when someone else runs it.
 
 *October 2026*
 
-- **Voxelcraft** — a Minecraft-faithful voxel sandbox in Godot 4.7 and C#.
-  Greedy meshing with smooth lighting and baked ambient occlusion,
-  two-channel voxel light propagation, multithreaded chunk streaming, and
-  every asset procedurally generated from scratch. Private until it is worth
-  opening.
-- Finishing the Raksha submission for Hackathon 2026.
-- Trying to write more C and less JavaScript.
+- **Voxelcraft**, a Minecraft-faithful voxel sandbox in Godot 4.7 and C#. Greedy
+  meshing with smooth lighting and baked ambient occlusion, two-channel voxel
+  light propagation, multithreaded chunk streaming, every asset generated from
+  scratch. Private until it is worth opening.
+- Finishing the Raksha submission.
+- Writing more C and less JavaScript.
 
 ## Stack
 
-Shipped work, not aspiration — the repositories are the evidence.
-
-**Languages** — TypeScript, Python, JavaScript, C#, C
-
-<img src="https://skillicons.dev/icons?i=ts,py,js,cs,c" alt="TypeScript, Python, JavaScript, C# and C" width="250">
-
-**Runtime and data** — Bun, Express, PostgreSQL with pgvector, Prisma, React,
-Tailwind, Three.js, GSAP
-
-<img src="https://skillicons.dev/icons?i=bun,express,postgres,prisma,react,tailwind,threejs,gsap" alt="Bun, Express, PostgreSQL, Prisma, React, Tailwind CSS, Three.js and GSAP" width="450">
-
-**Platform and tooling** — Supabase, Godot, Git, Linux, Docker
-
-<img src="https://skillicons.dev/icons?i=supabase,godot,git,linux,docker" alt="Supabase, Godot, Git, Linux and Docker" width="280">
+TypeScript · Python · JavaScript · C# · C · Bun · Express 5 · React · Tailwind ·
+PostgreSQL with pgvector · Prisma · Three.js · GSAP · Supabase · Godot · Docker ·
+Linux · Git
 
 ## Activity
 
@@ -111,18 +82,17 @@ Tailwind, Three.js, GSAP
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-light.svg" width="600" alt="Contribution activity over the last 53 weeks">
+  <img src="assets/activity-light.svg" width="680" alt="Contribution activity across the last 53 weeks">
 </picture>
 
 Regenerated daily by <code>.github/workflows/activity.yml</code> and committed
-straight into this repository, so it renders without any third-party image
-service being up.
+into this repository, so it renders with no third-party service in the path.
 
 </details>
 
 ---
 
-<sub>Every graphic here is a static SVG in <code>assets/</code> — no external
-badge or stats service, so nothing on this page can break or rot. Both colour
-themes are designed, not inverted, and the motion respects
-<code>prefers-reduced-motion</code>.</sub>
+<sub>Drawn as static SVG in <code>assets/</code> by me, not fetched from a badge
+service, so nothing on this page can break or quietly rot. Both themes are
+designed rather than inverted, contrast clears WCAG AA throughout, and the motion
+collapses to nothing under <code>prefers-reduced-motion</code>.</sub>
