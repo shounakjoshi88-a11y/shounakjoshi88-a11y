@@ -1,4 +1,5 @@
-<h3 align="left">Hello There! I'm Shounak Joshi 🫧</h3>
+<h1 align="left">Hello There! I'm Shounak Joshi 🫧</h1>
+
 <h3 align="left">Building agentic AI systems and real-stack apps that hold up when someone else runs them.</h3>
 
 <p>
@@ -15,51 +16,57 @@
 
 <table>
   <tr>
-    <td>
+    <td width="62%">
       <p><b>💡 About me:</b></p>
       <ul>
         <li>BTech CSE (AI &amp; ML) at RCOEM, second year</li>
         <li>Building agentic systems that plan, execute, verify, and retry</li>
-        <li>Real-time web apps where the race conditions are the actual problem</li>
-        <li>Graphics and engines written from scratch rather than configured</li>
-        <li>Backend architecture, APIs, and the unglamorous parts that keep them up</li>
+        <li>Real-time apps where the race conditions are the real problem</li>
+        <li>Graphics and engines written from scratch, not configured</li>
       </ul>
-      <p><sub>The projects are small. The problems inside them are not.</sub></p>
+      <p><sub>The projects are small.<br>The problems inside them are not.</sub></p>
     </td>
-    <td>
-      <img src="assets/fox.gif" width="240" alt="An animated pixel-art fox sitting and blinking, tail swaying between three positions." />
+    <td width="38%" align="center">
+      <img src="assets/fox.gif" width="230" alt="An animated pixel-art fox sitting and blinking, with an ear twitch and a tail swaying between three positions." />
     </td>
   </tr>
 </table>
 
 <h2 align="left">Tech Stack</h2>
 
-<table align="left">
+<table>
   <tr>
-    <td align="center"><b>Languages</b></td>
-    <td align="center">
+    <td width="20%"><b>Languages</b></td>
+    <td>
       TypeScript &nbsp;·&nbsp; Python &nbsp;·&nbsp; C# &nbsp;·&nbsp; C &nbsp;·&nbsp; JavaScript
     </td>
   </tr>
 
   <tr>
-    <td align="center"><b>Everyday</b></td>
-    <td align="center">
-      Bun &nbsp;·&nbsp; Express &nbsp;·&nbsp; React &nbsp;·&nbsp; Tailwind &nbsp;·&nbsp; PostgreSQL + pgvector &nbsp;·&nbsp; Prisma
+    <td><b>Everyday</b></td>
+    <td>
+      Bun &nbsp;·&nbsp; Express &nbsp;·&nbsp; React &nbsp;·&nbsp; Tailwind
     </td>
   </tr>
 
   <tr>
-    <td align="center"><b>Graphics</b></td>
-    <td align="center">
+    <td><b>Data</b></td>
+    <td>
+      PostgreSQL + pgvector &nbsp;·&nbsp; Prisma &nbsp;·&nbsp; Supabase
+    </td>
+  </tr>
+
+  <tr>
+    <td><b>Graphics</b></td>
+    <td>
       Three.js &nbsp;·&nbsp; GSAP &nbsp;·&nbsp; Godot
     </td>
   </tr>
 
   <tr>
-    <td align="center"><b>Platform</b></td>
-    <td align="center">
-      Supabase &nbsp;·&nbsp; E2B &nbsp;·&nbsp; Docker &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Git
+    <td><b>Platform</b></td>
+    <td>
+      E2B &nbsp;·&nbsp; Docker &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Git
     </td>
   </tr>
 </table>
