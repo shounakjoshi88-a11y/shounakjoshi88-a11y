@@ -1,12 +1,5 @@
-<img src="assets/hero.svg" width="680" alt="Shounak Joshi, BTech CSE with AI and ML at RCOEM, second year. Agentic AI systems, real-time web apps, engines written from scratch.">
-
-<img src="assets/dragon.svg" width="680" alt="Building things that hold up when someone else runs them.">
-
-Second year, so the projects are small. The problems inside them are not: two
-people claiming the last seat in the same instant, a rewriter that will happily
-turn `server` into `waiter`, a voxel mesh that has to stay smooth while four
-threads stream chunks into it. Everything below is shipped, and for each one the
-genuinely hard part is named rather than the feature list.
+<h3 align="left">Hello There! I'm Shounak Joshi 🫧</h3>
+<h3 align="left">Building agentic AI systems and real-stack apps that hold up when someone else runs them.</h3>
 
 <p>
   <a href="https://github.com/shounakjoshi88-a11y/Flux"><img src="assets/ic-flux.svg" width="15" height="15" alt=""> <strong>Flux</strong></a> &nbsp;·&nbsp;
@@ -18,35 +11,84 @@ genuinely hard part is named rather than the feature list.
   <a href="mailto:shounakjoshi88@gmail.com"><img src="assets/ic-email.svg" width="15" height="15" alt=""> <strong>Email</strong></a>
 </p>
 
-<a href="https://github.com/shounakjoshi88-a11y?tab=repositories">
-  <img src="assets/index.svg" width="680" alt="Index of selected work. 01 Flux, an agentic AI companion that plans, executes under tool permissions, verifies and retries. 02 Stellar Forge, an event platform whose ticket is cut by a scroll-driven pair of 3D scissors. 03 de-ai, a text rewriter that calls no model at all, with 156 assertions pinning the behaviour. 04 Meridian, clinical triage built only from six lab practicals on real ICD-10-CM data.">
-</a>
+<!-- cat and about -->
 
-## The part that was hard
+<table>
+  <tr>
+    <td>
+      <p><b>💡 About me:</b></p>
+      <ul>
+        <li>BTech CSE (AI &amp; ML) at RCOEM, second year</li>
+        <li>Building agentic systems that plan, execute, verify, and retry</li>
+        <li>Real-time web apps where the race conditions are the actual problem</li>
+        <li>Graphics and engines written from scratch rather than configured</li>
+        <li>Backend architecture, APIs, and the unglamorous parts that keep them up</li>
+      </ul>
+      <p><sub>The projects are small. The problems inside them are not.</sub></p>
+    </td>
+    <td>
+      <img src="assets/fox.gif" width="240" alt="An animated pixel-art fox sitting and blinking, tail swaying between three positions." />
+    </td>
+  </tr>
+</table>
 
-**Flux.** Twenty-one tools behind a plan, execute, verify, retry loop. The tools
+<h2 align="left">Tech Stack</h2>
+
+<table align="left">
+  <tr>
+    <td align="center"><b>Languages</b></td>
+    <td align="center">
+      TypeScript &nbsp;·&nbsp; Python &nbsp;·&nbsp; C# &nbsp;·&nbsp; C &nbsp;·&nbsp; JavaScript
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>Everyday</b></td>
+    <td align="center">
+      Bun &nbsp;·&nbsp; Express &nbsp;·&nbsp; React &nbsp;·&nbsp; Tailwind &nbsp;·&nbsp; PostgreSQL + pgvector &nbsp;·&nbsp; Prisma
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>Graphics</b></td>
+    <td align="center">
+      Three.js &nbsp;·&nbsp; GSAP &nbsp;·&nbsp; Godot
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>Platform</b></td>
+    <td align="center">
+      Supabase &nbsp;·&nbsp; E2B &nbsp;·&nbsp; Docker &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Git
+    </td>
+  </tr>
+</table>
+
+<h2 align="left">What I Build</h2>
+
+**Flux** — Twenty-one tools behind a plan, execute, verify, retry loop. The tools
 were the easy part. Because streaming interleaves tool results with prose, the
 verifier has to judge results it has not finished receiving — and vector memory
 re-injects itself into later calls, so one bad extraction quietly poisons every
 answer after it.
 
-**Stellar Forge.** Looks like a CRUD app with a 3D header, and the 3D header is
+**Stellar Forge** — Looks like a CRUD app with a 3D header, and the 3D header is
 the easy part. Seat claims have to be race-safe across concurrent users, so
 registration runs in serialisable transactions with row locking, and the live
 counter is one source of truth rather than whatever each client last fetched.
 
-**de-ai.** A rewriter that calls no model, so the same input gives the same
+**de-ai** — A rewriter that calls no model, so the same input gives the same
 output every time. The cost of that determinism is that a rule bank will happily
 turn `server` into `waiter` — so the lexical pass is fenced off from a
 600-term technical blocklist, and the pipeline re-scans its own output and
 reverts any swap that introduced a new tell.
 
-**Meridian.** Built under a hard constraint: only concepts from six lab
-practicals. No ORM because none was taught, no framework for the same reason.
+**Meridian** — Clinical triage built only from six lab practicals on real
+ICD-10-CM data. No ORM because none was taught, no framework for the same reason.
 The part I would not have guessed is that every generator bug ended up as a
 named regression test rather than a quiet fix.
 
-## Now
+<h2 align="left">Now</h2>
 
 **Voxelcraft** — a Minecraft-faithful sandbox in Godot 4.7 and C#. Greedy
 meshing with smooth lighting and baked ambient occlusion, two-channel voxel light
@@ -65,14 +107,7 @@ the C came from, and
 [60-login-page-challenge](https://github.com/shounakjoshi88-a11y/60-login-page-challenge),
 sixty login screens in plain HTML and CSS.
 
-## Stack
-
-**Languages** — TypeScript, Python, C#, C, JavaScript
-**Everyday** — Bun, Express, React, Tailwind, PostgreSQL with pgvector, Prisma
-**Graphics** — Three.js, GSAP, Godot
-**Platform** — Supabase, E2B, Docker, Linux, Git
-
-## Activity
+<h2 align="left">Activity</h2>
 
 <details>
 <summary>Contribution history</summary>
@@ -90,7 +125,12 @@ into this repository, so it renders with no third-party service in the path.
 
 ---
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=shounakjoshi88-a11y&label=Profile%20views&color=blue&style=flat" alt="Profile view count" />
+</p>
+
 <sub>Drawn as static SVG in <code>assets/</code> by me, not fetched from a badge
-service, so nothing on this page can break or quietly rot. Both themes are
-designed rather than inverted, contrast clears WCAG AA throughout, and the motion
-collapses to nothing under <code>prefers-reduced-motion</code>.</sub>
+service, so nothing on this page can break or quietly rot. The fox is a
+hand-drawn pixel sprite animated as a GIF, because GitHub strips inline SVG from
+Markdown. Both themes are designed rather than inverted, and contrast clears
+WCAG AA throughout.</sub>
