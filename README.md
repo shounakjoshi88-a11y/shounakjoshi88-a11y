@@ -19,7 +19,8 @@
     <td width="62%">
       <p><b>💡 About me:</b></p>
       <ul>
-        <li>BTech CSE (AI &amp; ML) at RCOEM, second year</li>
+        <li>BTech CSE at Ramdeobaba University, Nagpur, second year</li>
+        <li>Coordinator at <b>Engineering India RBU</b>, a student-led collective across 8 Nagpur colleges</li>
         <li>Building agentic systems that plan, execute, verify, and retry</li>
         <li>Real-time apps where the race conditions are the real problem</li>
         <li>Graphics and engines written from scratch, not configured</li>
@@ -40,7 +41,6 @@
     <td>
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" />
-      <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c%23.png" alt="C#" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript" />
     </td>
@@ -110,7 +110,7 @@ named regression test rather than a quiet fix.
 
 <h2 align="left">Now</h2>
 
-**Voxelcraft**: a Minecraft-faithful sandbox in Godot 4.7 and C#. Greedy
+**Voxelcraft**: a Minecraft-faithful sandbox in Godot 4.7. Greedy
 meshing with smooth lighting and baked ambient occlusion, two-channel voxel light
 propagation, multithreaded chunk streaming, and every asset generated from
 scratch. Private until it is worth opening.
