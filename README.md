@@ -4,6 +4,7 @@
 
 <p>
   <a href="https://github.com/shounakjoshi88-a11y/Flux"><img src="assets/ic-flux.svg" width="15" height="15" alt=""> <strong>Flux</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/shounakjoshi88-a11y/studydesk"><img src="assets/ic-studydesk.svg" width="15" height="15" alt=""> <strong>StudyDesk</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/shounakjoshi88-a11y/stellar-forge"><img src="assets/ic-stellar-forge.svg" width="15" height="15" alt=""> <strong>Stellar Forge</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/shounakjoshi88-a11y/de-ai"><img src="assets/ic-de-ai.svg" width="15" height="15" alt=""> <strong>de-ai</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/shounakjoshi88-a11y/meridian"><img src="assets/ic-meridian.svg" width="15" height="15" alt=""> <strong>Meridian</strong></a> &nbsp;·&nbsp;
@@ -77,6 +78,7 @@
   <tr>
     <td><b>Platform</b></td>
     <td>
+      <img width="42" src="https://cdn.simpleicons.org/android/E8946F" alt="Android" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png" alt="Linux" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png" alt="Git" />
@@ -91,6 +93,13 @@ were the easy part. Because streaming interleaves tool results with prose, the
 verifier has to judge results it has not finished receiving, and vector memory
 re-injects itself into later calls, so one bad extraction quietly poisons every
 answer after it.
+
+**StudyDesk**: the Android app I use every day, which is a harder review than a
+stranger gives it. A photographed timetable becomes real classes through
+on-device OCR, so the grid parser has to survive dark backgrounds, all four
+rotations, and 12 px time labels that binarise into blobs. It is also built to
+refuse: noise cannot become a 19:20 lecture, and a rescan replaces the rows it
+read before instead of stacking under them. The signed APK is in the releases.
 
 **Stellar Forge**: looks like a CRUD app with a 3D header, and the 3D header is
 the easy part. Seat claims have to be race-safe across concurrent users, so
