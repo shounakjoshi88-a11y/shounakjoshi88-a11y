@@ -9,7 +9,7 @@
   <a href="https://github.com/shounakjoshi88-a11y/de-ai"><img src="assets/ic-de-ai.svg" width="15" height="15" alt=""> <strong>de-ai</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/shounakjoshi88-a11y/meridian"><img src="assets/ic-meridian.svg" width="15" height="15" alt=""> <strong>Meridian</strong></a> &nbsp;·&nbsp;
   <a href="https://x.com/BroIndian39416"><img src="assets/ic-x.svg" width="15" height="15" alt=""> <strong>X</strong></a> &nbsp;·&nbsp;
-  <a href="https://youtube.com/@A3-21-ShounakSamirkumarJoshi"><img src="assets/ic-youtube.svg" width="15" height="15" alt=""> <strong>YouTube</strong></a> &nbsp;·&nbsp;
+  <a href="https://www.youtube.com/@Badass069"><img src="assets/ic-youtube.svg" width="15" height="15" alt=""> <strong>YouTube</strong></a> &nbsp;·&nbsp;
   <a href="mailto:shounakjoshi88@gmail.com"><img src="assets/ic-email.svg" width="15" height="15" alt=""> <strong>Email</strong></a>
 </p>
 
