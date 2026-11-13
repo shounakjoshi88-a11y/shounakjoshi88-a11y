@@ -8,6 +8,7 @@
   <a href="https://github.com/shounakjoshi88-a11y/stellar-forge"><img src="assets/ic-stellar-forge.svg" width="15" height="15" alt=""> <strong>Stellar Forge</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/shounakjoshi88-a11y/de-ai"><img src="assets/ic-de-ai.svg" width="15" height="15" alt=""> <strong>de-ai</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/shounakjoshi88-a11y/meridian"><img src="assets/ic-meridian.svg" width="15" height="15" alt=""> <strong>Meridian</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/shounakjoshi88-a11y/glass-ticker"><img src="assets/ic-glass-ticker.svg" width="15" height="15" alt=""> <strong>Glass Ticker</strong></a> &nbsp;·&nbsp;
   <a href="https://x.com/BroIndian39416"><img src="assets/ic-x.svg" width="15" height="15" alt=""> <strong>X</strong></a> &nbsp;·&nbsp;
   <a href="https://www.youtube.com/@Badass069"><img src="assets/ic-youtube.svg" width="15" height="15" alt=""> <strong>YouTube</strong></a> &nbsp;·&nbsp;
   <a href="mailto:shounakjoshi88@gmail.com"><img src="assets/ic-email.svg" width="15" height="15" alt=""> <strong>Email</strong></a>
@@ -44,6 +45,8 @@
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript" />
+      <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/kotlin.png" alt="Kotlin" />
+      <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swift.png" alt="Swift" />
     </td>
   </tr>
 
@@ -79,6 +82,7 @@
     <td><b>Platform</b></td>
     <td>
       <img width="42" src="https://cdn.simpleicons.org/android/E8946F" alt="Android" />
+      <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/electron.png" alt="Electron" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png" alt="Linux" />
       <img width="42" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png" alt="Git" />
@@ -116,6 +120,15 @@ reverts any swap that introduced a new tell.
 ICD-10-CM data. No ORM because none was taught, no framework for the same reason.
 The part I would not have guessed is that every generator bug ended up as a
 named regression test rather than a quiet fix.
+
+**Glass Ticker**: one market ticker on five platforms - Electron on the desktop,
+SwiftUI on iOS, Compose on Android, and the same UI as a `<glass-ticker>` web
+component for everything else, published as npm, Python and JVM packages. The
+chart was the easy part. A browser cannot reach Yahoo at all, so every language
+binding ships a small data server, and the crumb cookie Yahoo wants does not
+exist in Node's `fetch`, so the server keeps its own. The batch quote endpoint
+also refuses one request in twenty, so all three servers rebuild the quote from
+the chart endpoint instead of drawing an empty row.
 
 <h2 align="left">Now</h2>
 
